@@ -1,15 +1,81 @@
-  html, body , .block{
-    height: 100%;
-  }
-       
-  .pin-top {
-    position: relative;
-  }
+body 
+{ 
+  padding-top: 65px; 
+  background: url('img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .pin-bottom {
-    position: relative;
-  }
+nav{
+  background: transparent !important;
+}
 
-  .pinned {
-    position: fixed !important;
-  }
+/*
+
+  Code display : CSS;
+
+*/
+
+
+.code ul
+{
+
+  counter-reset: li;
+
+}
+
+.code li::before 
+{
+  content: counter(li); 
+  display: inline-block;
+  width: 1em;
+}
+
+.code li 
+{
+  
+  border-left: 3px solid white;
+  border-bottom-left-radius:  5px;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  padding: 5px;
+  padding-left: 20px;  
+  counter-increment: li;
+  font-size: 12pt;
+  font-family: cursive;
+  background-color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,.6);
+
+}
+
+.title
+{
+  
+  font-family: cursive;
+  color: white;
+  font-size: 25pt !important;
+}
+
+.exp
+{
+  text-align: justify;
+  text-indent: 10%;
+  color: rgba(255,255,255,.9);
+  padding: 20px;
+}
+
+h1,h2,h3,h4,h5
+{
+  font-family: cursive;
+  color: white;
+}
+
+blockquote
+{
+  border-left-color: rgba(255,255,255,0.5);  
+}
+
+/*
+
+  Code display : JS;
+
+*/
