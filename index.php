@@ -11,19 +11,21 @@
 </head>
 
 <header>
-
-<nav class="pushpin" data-target="js">
-  <div class="nav-wrapper">
-    <div class="container">
-      <a href="#" class="brand-logo"><img style=" padding-top: 10px; height: 55px; width: auto;" class="responsive-img" src="img/css-3-logo-1.png" alt=""></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#css">CSS</a></li>
-        <li><a href="#js">JS</a></li>
-        <li><a href="#jq">J$</a></li>
-      </ul>
+<div class="navbar-fixed">
+  
+<nav data-target="js">
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="#" class="brand-logo"><img style=" padding-top: 10px; height: 55px; width: auto;" class="responsive-img" src="img/css-3-logo-1.png" alt=""></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#css">CSS</a></li>
+          <li><a href="#js">JS</a></li>
+          <li><a href="#jq">J$</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
 
 </header>
 

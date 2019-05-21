@@ -1,44 +1,38 @@
 <div class="col s12 container row">
 	
-	<blockquote class="title">Como funciona: JS</blockquote>
+	<blockquote class="title">Como funciona: J$</blockquote>
 	<div id="css_1" style=" background-color: rgba(255,255,255,0.5);" class=" exp">
 		
-	<p>O Javascript nos permite utilizar uma linguagem lógica para amenizar as operações que a linguagem de servidor (PHP ou outra) irá realizar. 
-	Boa parte das alterações visuais (clicks), animações, validações de formulários podem ser feitas utilizando Javascript, uma linguagem que é executada no frontend, ou seja, não necessita de nenhum tipo de requisição ao servidor para ser mostrada (é interpretada no navegador).
+	<p>O jQuery é uma biblioteca de javascript que nos permite utilizar as funcionalidades da linguagem de uma forma mais dinâmica e prática. Nos proporciona as mesmas funções que o javascript normal nos ofereceria , e devido a sua praticidade podemos escrever tais funções de forma resumida devido a sua práticidade.
 	</p>
 
 	</div>
 
-	<blockquote class="title">Definições: JS</blockquote>
+	<blockquote class="title">Definições: J$</blockquote>
 	<div  style=" background-color: rgba(255,255,255,0.5);"  class="exp">
-		<p>O JS manipula a página HTML através do document (DOM), assim nos permitindo acessar todas as tags que compõem o arquivo em questão. Quando solicitamos uma busca por id , classe ou tag no JS, ele retorna um objeto do tipo DOM correspondente a tal parametro passado. Neste tal objeto é possível acessar metodos e propriedades do DOM, tais como:
-		value (input), innerHTML (tags), length (quantidade de elementos filhos) , entre outros.</p>
+		<p>Podemos acessar os objetos DOM da seguinte forma: $(''), sendo que entre as aspas é aceito id's , classes , nomes, tags , entre outros. Esse mesmo será o nosso objeto jQuery (DOM), que contém os metodos disponiveis na biblioteca. </p>
 	</div>
 
-	<blockquote class="title">Exemplos: JS</blockquote>
+	<blockquote class="title">Exemplos: J$</blockquote>
 	<div class="col s12 left row container code">
 		<div class="col s12 m6">
 			<h5>Funções por Evento</h5>
 			<ul>
-			  <li>function sum(){</li>
-			  <li>	var input = document.getElementById('id').value;</li>
-			  <li>	var input2 = document.getElementById('id2').value;</li>
+			  <li>$('#ex').on('click',function(){</li>
+			  <li>	var input = $('#id').value</li>
+			  <li>	var input2 = $('#id2').value;</li>
 			  <li>	alert(input + input2);</li>
-			  <li> }</li>
-			  <li>var btn = document.getElementById('btn');</li>
-			  <li>btn.addEventListener('click',sum,false);</li>
+			  <li> });</li>
 			</ul>
 		</div>
 		<div class="col s12 m6">
 			<h5>Funções por Load (Página) </h5>
 			<ul>
-			  <li>function sum(){</li>
-			  <li>	var input = document.getElementById('id').value;</li>
-			  <li>	var input2 = document.getElementById('id2').value;</li>
-			  <li>	alert(input + input2);</li>
-			  <li> }</li>
-			  <li>document.addEventListener('load',sum,false);</li>
+			  <li>$(document).ready(function(){</li>
+			  <li>	var input = $('#div').text</li>
 			  <li></li>
+			  <li>	alert(input);</li>
+			  <li> });</li>
 			</ul>
 		</div>
 	</div>
