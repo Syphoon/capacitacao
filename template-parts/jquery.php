@@ -3,7 +3,7 @@
 	<blockquote class="title">Como funciona: J$</blockquote>
 	<div id="css_1" style=" background-color: rgba(255,255,255,0.5);" class=" exp">
 		
-	<p>O jQuery é uma biblioteca de javascript que nos permite utilizar as funcionalidades da linguagem de uma forma mais dinâmica e prática. Nos proporciona as mesmas funções que o javascript normal nos ofereceria , e devido a sua praticidade podemos escrever tais funções de forma resumida devido a sua práticidade.
+	<p>O jQuery é uma biblioteca de javascript que nos permite utilizar as funcionalidades da linguagem de uma forma mais dinâmica e prática.
 	</p>
 
 	</div>
