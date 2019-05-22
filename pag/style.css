@@ -60,7 +60,7 @@ main{
   margin-top: 1%;
   font-family: cursive;
   color: white;
-  font-size: 25pt !important;
+  font-size: calc(25px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 
 }
 

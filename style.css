@@ -57,7 +57,7 @@ a.active{
   
   font-family: cursive;
   color: white;
-  font-size: 25pt !important;
+  font-size: calc(20px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .exp
@@ -107,3 +107,4 @@ blockquote
   transition: background-color 0.4s ease;
 
 }
+
