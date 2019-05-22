@@ -23,6 +23,8 @@
 		<li><a href="#intro">Intro</a></li>
 		<li><a href="#css">CSS</a></li>
 		<li><a href="#evt">EVT</a></li>
+		<li><a href="#BOM">BOM</a></li>
+		<li><a href="#BOM-2">BOM-2</a></li>
     </ul>
 </header>
 
@@ -52,7 +54,7 @@
 				Dado um elemento de id 'p1', podemos alterar o seu conteúdo modificando o valor interno:	document.getElementById("p1").innerHTML = "Novo Conteúdo".
 			</li>
 			<li class="exp">
-				Podemos também recuperar informações especificas sobre o elemento retornado, por exemplo: Suponha uma div com 3 elementos filhos e de id 'd1': document.getElementById("d1").length, isso nos retornária o valor 3, que é a quantidade de elementos filhos contidos no elemento solicitado. 	
+				Podemos também recuperar informações especificas sobre o elemento retornado, por exemplo: Suponha uma div com 3 elementos filhos li e de id 'd1': document.getElementById("d1").getElementByTagName('li').length, isso nos retornária o valor 3, que é a quantidade de elementos filhos li contidos no elemento solicitado. 	
 			</li>
 			<li class="exp">
 				Um detalhe quanto a inputs e seus variaveis, seus conteúdos 'internos', são na verdade os valores dos mesmos, ou seja, caso seja desejado acessar o conteúdo de um input podemos fazer: document.getElementById("inp").value, isso nos retorna o conteúdo escrito no mesmo.
@@ -74,6 +76,39 @@
 				<li>Mais exemplos em: https://www.w3schools.com/js/js_htmldom_eventlistener.asp</li>
 			</p>
 		</div>		
+		<blockquote id="BOM" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i>	BOM (BROWSER)</blockquote>
+		<div class=" container exp-2">
+			<span>
+				<i>The Browser Object Model (BOM) allows JavaScript to "talk to" the browser.</i>
+				There are no official standards for the Browser Object Model (BOM). Since modern browsers have implemented (almost) the same methods and properties for JavaScript interactivity, it is often referred to, as methods and properties of the BOM.
+			</span>
+		</div>
+		<div class="container exp">
+			<p>
+					O objeto 'window' (janela), é presente em todos os navegadores, e nos permite acessar quase os mesmos elementos que o objeto document, com um plus, como por exemplo o tamanho de uma determinada tela (window.innerHeight,window.innerWidth). Outros metodos presentes no objeto:
+					<li>window.open() - Abre uma nova janela.</li>
+					<li>window.close() - Fecha a janela atual.</li>
+					<li>window.moveTo() - Move para a tela atual (aberta).</li>
+					<li>window.resizeTo() - Redimenciona a tela atual.</li>
+					<li>https://www.w3schools.com/js/js_window.asp</li>
+			</p>
+		</div>
+		<blockquote id="BOM-2" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i>	BOM (Window History)</blockquote>
+		<div class="container exp-2">
+			O objeto History (historico) nos permite manipular o historico atual do navegador, como por exemplo os 2 seguintes metodos:
+			<li>history.back() - O mesmo que clicar para voltar no navegador.</li>
+			<li>history.forward() - O mesmo que clicar em avançar no navegador.</li>
+			<li>https://www.w3schools.com/js/js_window_history.asp</li>
+		</div>
+		<blockquote id="cru" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i>	Cookies</blockquote>
+		<div class="container exp-2">
+			<span><i>Cookies are data, stored in small text files, on your computer. When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.</i></span>
+		</div>
+		<div class="container exp">
+			<p>
+				<li>https://www.w3schools.com/js/js_cookies.asp</li>
+			</p>
+		</div>
 	</main>
 
 </body>

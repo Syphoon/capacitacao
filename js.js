@@ -40,7 +40,7 @@ $(window).scroll(function() {
 
 		}else if (active.attr('href') == '#jq') {
 
-			$('#pag').attr('href','pag/css-exemplos_1.php');
+			$('#pag').attr('href','pag/j$-exemplos_1.php');
 			$('body').css('background-image',"url('img/background.jpg')");
 			$('#logo').attr('src','img/jq-logo.png');
 			$('#pag').css('background-color','#4527a0');
