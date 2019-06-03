@@ -64,6 +64,32 @@ main{
 
 }
 
-.container span{
+.container span
+{
   text-indent: 20px;
+}
+
+
+.box
+{
+
+  padding: 25%;
+  padding-top: 10%;
+  padding-bottom: 0;
+  text-align: center !important;
+
+}
+
+input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected {
+    background-color: rgba(0,0,0,0) !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.logo_tecno
+{
+
+  height: 60%;
+  width: 60%;
+
 }
