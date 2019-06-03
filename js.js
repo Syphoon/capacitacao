@@ -49,4 +49,3 @@ $(window).scroll(function() {
 
     }, 25));
 });
-

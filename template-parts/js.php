@@ -37,7 +37,7 @@
 			  <li>	var input2 = document.getElementById('id2').value;</li>
 			  <li>	alert(input + input2);</li>
 			  <li> }</li>
-			  <li>document.addEventListener('load',sum,false);</li>
+			  <li>window.onload = sum;</li>
 			  <li></li>
 			</ul>
 		</div>

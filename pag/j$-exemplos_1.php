@@ -21,8 +21,9 @@
 			<a href="#name"><span class="white-text name">User Padrão</span></a>
 		</div>
 		<li><a href="#intro">Intro</a></li>
-		<li><a href="#css">CSS</a></li>
-		<li><a href="#evt">EVT</a></li>
+		<li><a href="#inc">Include</a></li>
+		<li><a href="#sint">Sintaxe</a></li>
+		<li><a href="#sel">Seletores</a></li>
     </ul>
 </header>
 
@@ -30,50 +31,65 @@
 
 	<main class="row">
 		
-		<blockquote id="intro" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i>	JavaScript HTML DOM</blockquote>
+		<blockquote id="intro" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i>	J$</blockquote>
 		<div class="container exp-2">
-			<span><i>"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."</i></span>
+			<span><i>"jQuery é leve, "escrever menos, fazer mais", biblioteca JavaScript. jQuery tem um monte de tarefas comuns que requerem muitas linhas de código JavaScript para realizar, e envolve-los em métodos que você pode chamar com uma única linha de código."</i></span>
 		</div>
 		<div class="container exp">
-			<span><i>Através do JS, conseguimos extrair do objeto DOM propriedades contidas nas tags HTML do documento em questão.</i> Existem algumas formas de obter tal objeto, 3 delas são:</span>
-			<p>
-				<li>document.getElementById('');</li>
-				<li>document.getElementsByClassName('');</li>
-				<li>document.getElementsByTagName('');</li>
+			<h6><span><b>A biblioteca jQuery contém os seguintes recursos:</b></h6><br>
+				<li>HTML / manipulação DOM;</li>
+				<li>manipulação de CSS;</li>
+				<li>métodos de eventos HTML;</li>
+				<li>Efeitos e animações;</li>
+				<li>AJAX;</li>
+				<li>Serviços de utilidade pública;</li>
 			</p>
-			<p>
-				Dado uma tag qualquer se tal propriedade existir e corresponder com a sintaxe correta, a função retornará um objeto DOM correspondente ao elemento procurado. Ex: 
-				<br>
-		    </p>
 		    
 		</div>
-    	<div class="container">
-	    	<li class="exp">
-				Dado um elemento de id 'p1', podemos alterar o seu conteúdo modificando o valor interno:	document.getElementById("p1").innerHTML = "Novo Conteúdo".
-			</li>
-			<li class="exp">
-				Podemos também recuperar informações especificas sobre o elemento retornado, por exemplo: Suponha uma div com 3 elementos filhos e de id 'd1': document.getElementById("d1").length, isso nos retornária o valor 3, que é a quantidade de elementos filhos contidos no elemento solicitado. 	
-			</li>
-			<li class="exp">
-				Um detalhe quanto a inputs e seus variaveis, seus conteúdos 'internos', são na verdade os valores dos mesmos, ou seja, caso seja desejado acessar o conteúdo de um input podemos fazer: document.getElementById("inp").value, isso nos retorna o conteúdo escrito no mesmo.
-			</li>
-		</div>
-		<blockquote id="css" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i>	DOM CSS</blockquote>
+
+		<blockquote id="inc" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i> Como utilizar o J$</blockquote>
 		<div class=" container exp-2">
 			<p>
-				Através do DOM também conseguimos mudar propriedades do CSS, tais como: color, background color, padding, entre outros. A sintax correta para se fazer o mesmo é:
-				<li>document.getElementById(id).style.propriedade_desejada = 'novo valor'</li>
-				<li>Mais exemplos em: https://www.w3schools.com/js/js_htmldom_css.asp</li>
+				<h6><span><b>Formas de se utilizar o J$ no seu site:</b></h6><br>
+				<li>Baixar a biblioteca jQuery de jQuery.com</li>
+				<li>Incluir jQuery através de CDN</li>
+				<p>https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js</p>
 			</p>
 		</div>
-		<blockquote id="evt" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i>	DOM EventListener</blockquote>
+
+		<blockquote id="sint" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i> Sintaxe do J$</blockquote>
 		<div class=" container exp-2">
 			<p>
-				Existem algumas formas de chamar uma função JS, uma delas é por evento, mais especificamente, eventListener. Sua sintax segue a seguinte lógica: Dada uma função X e um elemento E deve-se criar um event listener com a opção desejada. Ex:
-				<li>E.addEventListener('click',X), com essa regra temos que a função X será executada toda vez que o elemento E for clicado.</li>
-				<li>Mais exemplos em: https://www.w3schools.com/js/js_htmldom_eventlistener.asp</li>
+				<h6><span><b>Sintaxe básica é: $ ( seletor ). ação ()</b></h6><br>
+				<li>O sinal $ iniciar o acesso J$;</li>
+				<li>Um (seletor) para encontrar elementos HTML;</li>
+				<li>Uma ação() Jquery para ser executada no elemento encontrado pelo (seletor);</li>
 			</p>
-		</div>		
+		</div>
+		<div class=" container exp-2">
+			<p>
+				<h6><b>É assim que começamos a estrutura inicial do J$</b></h6>
+				<p>$(document).ready(function(){</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;// Métodos J$</p>
+				<p>});</p>
+
+				<h6><b>Ou de forma mais reduzida</b></h6>
+				<p>$(function(){</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;// Métodos J$</p>
+				<p>});</p>
+
+			</p>
+		</div>	
+
+		<blockquote id="sel" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i> Seletores</blockquote>
+		<div class=" container exp-2">
+			<p>
+				<h6><span><b>Podemos selecionar e manipular os elementos HTML das seguintes formas:</b></h6><br>
+				<p>Se elemento for uma <i>tag</i> como por exemplo a tag <i>"p"</i>, utilizaremos o seletor () junto com aspas simples ('') ou duplas ("") e colocaremos a tag diretamente no seletor, então teremos $("p").</p>
+				<p>Caso o elemento seja um <i>id</i>, devemos usar o simbolo '#' e o restante é análogo ao método que é utilizado nas <i>tags</i>:  $("#id")</p>
+				<p>E por fim, podemos também selecionar por uma <i>class</i> que utiliza o "." e seguindo a lógica dos anteriores, temos: $(".class")</p>
+			</p>
+		</div>	
 	</main>
 
 </body>
