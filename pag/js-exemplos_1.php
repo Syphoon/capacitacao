@@ -17,6 +17,7 @@
 	<ul class="sidenav sidenav-fixed z-depth-4">
 		<div class="menu">
 			<a class="waves-effect waves-light btn-floating modal-trigger" style="background: transparent;" href="#modal1"><i class="fas fa-camera-retro"></i></a>
+			<a id='logout' class="waves-effect waves-light btn-floating " style="background: transparent;"><i class="fas fa-sign-out-alt"></i></a>
 		</div>
 		<div class="user-view">
 		  <div class="background">

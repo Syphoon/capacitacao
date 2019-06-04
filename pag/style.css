@@ -98,5 +98,11 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
 {
 
   position: absolute;
+  display: grid;
 
+}
+
+.user-view
+{
+  padding-left: 50px !important;
 }

@@ -50,3 +50,21 @@ $(window).scroll(function() {
 
     }, 25));
 });
+
+
+/*
+	
+	$ajax
+
+*/
+
+$('#logout').on('click',function(){
+
+	$.ajax({
+        url: '../php/functions.php',
+        dataType: 'text',
+        type: 'POST',
+        data:{logout:'logout'}
+    });
+
+});
