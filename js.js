@@ -9,6 +9,7 @@ $(document).ready(function() {
 	    fullWidth: true
 	});
         
+	$('.modal').modal();
 
 });
 

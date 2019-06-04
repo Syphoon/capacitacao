@@ -28,6 +28,30 @@
 </div>
 </header>
 
+<?php 
+
+
+if(isset($_GET['login'])):
+
+  if($_GET['login'] == 'sucess'):
+
+    session_start();
+
+    echo "<script>alert('Login realizado com sucesso.". $_SESSION['username']."');</script>";
+
+    else:
+
+    echo "<script>alert('Senha ou username incorretos.');</script>";
+
+
+  endif;
+
+endif;
+
+
+?>
+
+
 <body>
 
   <main>

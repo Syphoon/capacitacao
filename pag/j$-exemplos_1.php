@@ -11,14 +11,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<?php require_once "image_profile.php" ?>
+
+
 <header>
 	<ul class="sidenav sidenav-fixed z-depth-4">
+		<div class="menu">
+			<a class="waves-effect waves-light btn-floating modal-trigger" style="background: transparent;" href="#modal1"><i class="fas fa-camera-retro"></i></a>
+		</div>
 		<div class="user-view">
 		  <div class="background">
 		    <img src="../img/background.jpg">
 		  </div>
-			<a href="#user"><img class="circle" src="../img/user.jpg"></a>
-			<a href="#name"><span class="white-text name">User Padrão</span></a>
+		  <?php 
+
+			echo '<a href="#user"><img class="circle" src="data:image/jpeg;base64,'.base64_encode( $_SESSION['image'] ).'"></a>';
+			echo '<a href="#name"><span class="white-text name">'.$_SESSION['username'].'</span></a>';
+
+		  ?>
+		  <br>
 		</div>
 		<li><a href="#intro">Intro</a></li>
 		<li><a href="#inc">Include</a></li>

@@ -93,3 +93,10 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
   width: 60%;
 
 }
+
+.menu
+{
+
+  position: absolute;
+
+}
