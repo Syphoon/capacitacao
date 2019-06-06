@@ -77,6 +77,8 @@ class user
 		else:
 
 			echo "deu merda";
+			echo "<script>alert('Deu merda no upload');</script>";
+			die;
 
 		endif;
 

@@ -4,11 +4,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Capacitação</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <?php require_once "image_profile.php" ?>
@@ -17,7 +17,7 @@
 	<ul class="sidenav sidenav-fixed z-depth-4">
 		<div class="menu">
 			<a class="waves-effect waves-light btn-floating modal-trigger" style="background: transparent;" href="#modal1"><i class="fas fa-camera-retro"></i></a>
-			<a id='logout' class="waves-effect waves-light btn-floating " style="background: transparent;"><i class="fas fa-sign-out-alt"></i></a>
+			<a id='logout' href="login.php?&logout=true" class="waves-effect waves-light btn-floating " style="background: transparent;"><i class="fas fa-sign-out-alt"></i></a>
 		</div>
 		<div class="user-view">
 		  <div class="background">
@@ -39,7 +39,7 @@
     </ul>
 </header>
 
-<body>
+<body class="jss">
 
 	<main class="row">
 		
@@ -76,7 +76,7 @@
 			<p>
 				Através do DOM também conseguimos mudar propriedades do CSS, tais como: color, background color, padding, entre outros. A sintax correta para se fazer o mesmo é:
 				<li>document.getElementById(id).style.propriedade_desejada = 'novo valor'</li>
-				<li>Mais exemplos em: https://www.w3schools.com/js/js_htmldom_css.asp</li>
+				<li>Mais exemplos em: <a href="https://www.w3schools.com/js/js_htmldom_css.asp"><i class='fas fa-heart'></i> W3school <i class='fas fa-heart'></i></a></li>
 			</p>
 		</div>
 		<blockquote id="evt" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i>	DOM EventListener</blockquote>
@@ -84,7 +84,7 @@
 			<p>
 				Existem algumas formas de chamar uma função JS, uma delas é por evento, mais especificamente, eventListener. Sua sintax segue a seguinte lógica: Dada uma função X e um elemento E deve-se criar um event listener com a opção desejada. Ex:
 				<li>E.addEventListener('click',X), com essa regra temos que a função X será executada toda vez que o elemento E for clicado.</li>
-				<li>Mais exemplos em: https://www.w3schools.com/js/js_htmldom_eventlistener.asp</li>
+				<li>Mais exemplos em: <a href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp"><i class='fas fa-heart'></i> W3school <i class='fas fa-heart'></i></a></li>
 			</p>
 		</div>		
 		<blockquote id="BOM" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i>	BOM (BROWSER)</blockquote>
@@ -101,7 +101,7 @@
 					<li>window.close() - Fecha a janela atual.</li>
 					<li>window.moveTo() - Move para a tela atual (aberta).</li>
 					<li>window.resizeTo() - Redimenciona a tela atual.</li>
-					<li>https://www.w3schools.com/js/js_window.asp</li>
+					<li><a href="https://www.w3schools.com/js/js_window.asp"><i class='fas fa-heart'></i> W3school <i class='fas fa-heart'></i></a></li>
 			</p>
 		</div>
 		<blockquote id="BOM-2" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i>	BOM (Window History)</blockquote>
@@ -109,7 +109,7 @@
 			O objeto History (historico) nos permite manipular o historico atual do navegador, como por exemplo os 2 seguintes metodos:
 			<li>history.back() - O mesmo que clicar para voltar no navegador.</li>
 			<li>history.forward() - O mesmo que clicar em avançar no navegador.</li>
-			<li>https://www.w3schools.com/js/js_window_history.asp</li>
+			<li><a href="https://www.w3schools.com/js/js_window_history.asp"><i class='fas fa-heart'></i> W3school <i class='fas fa-heart'></i></a></li>
 		</div>
 		<blockquote id="cru" class="scrollspy container title"><i class="fab fa-js-square fa-lg"></i>	Cookies</blockquote>
 		<div class="container exp-2">
@@ -117,23 +117,25 @@
 		</div>
 		<div class="container exp">
 			<p>
-				<li>https://www.w3schools.com/js/js_cookies.asp</li>
+				<li><a href="https://www.w3schools.com/js/js_cookies.asp"><i class='fas fa-heart'></i> W3school <i class='fas fa-heart'></i></a></li>
 			</p>
 		</div>
 	</main>
 
 </body>
 
-<script
-  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-  crossorigin="anonymous"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<script type="text/javascript" src="../jquery.js"></script><script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             
-<script type="text/javascript" src='../js.js'></script>
+
+<script type="text/javascript" src="../js.js"></script>
 
 <footer>
 	

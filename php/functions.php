@@ -37,12 +37,5 @@
 
 	endif;
 
-	if(isset($_POST['logout'])):
-	
-		die;
-		$con = new con;
-		$con->logout();
-
-	endif;
 
  ?>

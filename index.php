@@ -48,6 +48,14 @@ if(isset($_GET['login'])):
 
 endif;
 
+if(!isset($_SESSION['username'])):
+
+    echo '<script>alert('.$_SESSION['username'].');</script>';
+    header("Location: ./pag/login.php?&logout=true");
+
+endif;
+
+
 
 ?>
 
@@ -87,15 +95,16 @@ endif;
   
 </body>
 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
   crossorigin="anonymous"></script>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             
+  
 <script type="text/javascript" src='js.js'></script>
 
 <footer>

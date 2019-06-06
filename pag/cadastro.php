@@ -21,7 +21,7 @@
 <header>
 </header>
 
-<body class="">
+<body>
     <main class="container">
 
         <div class="box row">

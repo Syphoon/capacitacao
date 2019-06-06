@@ -17,6 +17,7 @@
 	<ul class="sidenav sidenav-fixed z-depth-4">
 		<div class="menu">
 			<a class="waves-effect waves-light btn-floating modal-trigger" style="background: transparent;" href="#modal1"><i class="fas fa-camera-retro"></i></a>
+			<a id='logout' href="login.php?&logout=true" class="waves-effect waves-light btn-floating " style="background: transparent;"><i class="fas fa-sign-out-alt"></i></a>
 		</div>
 		<div class="user-view">
 		  <div class="background">
@@ -36,7 +37,7 @@
     </ul>
 </header>
 
-<body>
+<body class="jss">
 
 	<main class="row">
 		
@@ -97,10 +98,15 @@
   crossorigin="anonymous"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
-<script type="text/javascript" src='../js.js'></script>
+  
+<script type="text/javascript" src="../js.js"></script>
 
 <footer>
 	

@@ -26,25 +26,46 @@ $(window).scroll(function() {
 		var active = $('nav').find('.active');
 		if (active.attr('href') == '#css') {
 
-			$('body').css('background-image',"url('img/background3.png')");
 			$('#logo').attr('src','img/css-3-logo-1.png');
+			$('body').css('background-image',"url(img/background3.png)");
 			$('#pag').attr('href','pag/css-exemplos_1.php');
-			$('#pag').css('background-color','#0097a7');
+			
+			$('#pag').addClass('css');
+			$('#pag').removeClass('jss');
+			$('#pag').removeClass('js');
+			// $('body').addClass('css');
+			// $('body').removeClass('jss');
+			// $('body').removeClass('js');
+
 
 
 		}else if(active.attr('href') == '#js'){
 
-			$('body').css('background-image',"url('img/background2.png')");
 			$('#logo').attr('src','img/js-logo.png');
+			$('body').css('background-image',"url(img/background2.png)");
 			$('#pag').attr('href','pag/js-exemplos_1.php');
-			$('#pag').css('background-color','#ff8a65');
+			
+			$('#pag').addClass('js');
+			$('#pag').removeClass('css');
+			$('#pag').removeClass('jss');
+			// $('body').addClass('js');
+			// $('body').removeClass('css');
+			// $('body').removeClass('jss');
+
+
 
 		}else if (active.attr('href') == '#jq') {
+			
+			$('#pag').addClass('jss');
+			$('body').css('background-image',"url(img/background.jpg)");
+			$('#pag').removeClass('css');
+			$('#pag').removeClass('js');
+			// $('body').addClass('jss');
+			// $('body').removeClass('css');
+			// $('body').removeClass('js');
 
 			$('#pag').attr('href','pag/j$-exemplos_1.php');
-			$('body').css('background-image',"url('img/background.jpg')");
 			$('#logo').attr('src','img/jq-logo.png');
-			$('#pag').css('background-color','#4527a0');
 
 		}
 
@@ -60,11 +81,20 @@ $(window).scroll(function() {
 
 $('#logout').on('click',function(){
 
-	$.ajax({
-        url: '../php/functions.php',
-        dataType: 'text',
-        type: 'POST',
-        data:{logout:'logout'}
+	var values = "desu";
+
+	 $.ajax({
+        url: "../php/functions.php",
+        type: "POST",
+        data: values,
+        success: function (response) {
+
+        	console.log("logout");
+
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+           console.log(textStatus, errorThrown);
+        }
     });
 
 });

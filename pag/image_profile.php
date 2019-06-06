@@ -2,7 +2,9 @@
 <?php 
 	
 	session_start();
+	
 	if (isset($_FILES['update_image'])):
+		
 
 		if($_FILES['update_image']['size'] < 1048576 * 2):
 
@@ -22,6 +24,13 @@
 	endif;
 
 
+	if(!isset($_SESSION["username"])):
+	
+		header("Location: login.php?&logout=true");
+
+	endif;
+
+
 ?>
 
 <div id="modal1" class="modal"  style="background: rgba(255,255,255,.1); border: solid white 1px;">
@@ -37,7 +46,7 @@
 		            <input class="file-path validate" type="text">
 		          </div>
 		        </div>
-		        <button class="col s2 btn" style="margin-left: 12px; " type="submit" name="update">Enviar</i></button>
+		        <button class="col s2 btn" style="margin-left: 12px; " type="submit" name="update"><i class="fas fa-paper-plane "></i></button>
 		    </form>
 		</div>
 	</div>

@@ -3,7 +3,12 @@ body
   background: url('img/background3.png');
   background-repeat: no-repeat;
   background-size: cover;
-  transition: background-image 0.5s ease;
+  transition: background-color 0.5s ease, background-image 0.5 ease;
+}
+
+body *
+{
+  overflow-wrap: break-word;
 }
 
 nav{
@@ -103,8 +108,22 @@ blockquote
 
 #pag{
 
-  background-color: #0097a7;
+  background-color: transparent;
   transition: background-color 0.4s ease;
 
 }
 
+.css
+{
+  background-color: #041930 !important;
+}
+
+.js
+{
+  background-color: #d04215 !important;
+}
+
+.jss
+{
+  background-color: #1b0854 !important;
+}
